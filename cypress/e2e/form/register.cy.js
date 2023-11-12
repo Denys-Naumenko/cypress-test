@@ -6,8 +6,7 @@ describe("Registration form", () => {
     const email = "test@example.com";
 
     it("Filling Form", () => {
-        cy.visit("auth/register");   // After homework 12 merged i will fix all urls
-        cy.visit('/auth/register');
+        cy.visit('pages/auth/register');
         cy.get('.form-control-group').parent().within(() => {
             cy.contains('Full name').type(name);
             cy.contains('Email').type(email);
