@@ -14,7 +14,7 @@ describe("Layout page test suite", () => {
          it("First test, should failed", () => {
             cy.visit("pages/layout/accordion");   
              cy.url().should("contain", "layout/accordion");
-             cy.get(".appearance-filled").should("contain.text","Toggle First Ite234m");
+             cy.get(".appearance-filled").should("contain.text","Toggle Accordion By Button");
         });
     });
     
